@@ -1,0 +1,14 @@
+D:\Users\namht1\source\repos\Crawler\bin\Release\netcoreapp3.1\Crawler.exe
+D:\Users\namht1\source\repos\Crawler\bin\Release\netcoreapp3.1\Crawler.deps.json
+D:\Users\namht1\source\repos\Crawler\bin\Release\netcoreapp3.1\Crawler.runtimeconfig.json
+D:\Users\namht1\source\repos\Crawler\bin\Release\netcoreapp3.1\Crawler.runtimeconfig.dev.json
+D:\Users\namht1\source\repos\Crawler\bin\Release\netcoreapp3.1\Crawler.dll
+D:\Users\namht1\source\repos\Crawler\bin\Release\netcoreapp3.1\Crawler.pdb
+D:\Users\namht1\source\repos\Crawler\bin\Release\netcoreapp3.1\HtmlAgilityPack.dll
+D:\Users\namht1\source\repos\Crawler\bin\Release\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
+D:\Users\namht1\source\repos\Crawler\obj\Release\netcoreapp3.1\Crawler.csprojAssemblyReference.cache
+D:\Users\namht1\source\repos\Crawler\obj\Release\netcoreapp3.1\Crawler.AssemblyInfoInputs.cache
+D:\Users\namht1\source\repos\Crawler\obj\Release\netcoreapp3.1\Crawler.AssemblyInfo.cs
+D:\Users\namht1\source\repos\Crawler\obj\Release\netcoreapp3.1\Crawler.csproj.CopyComplete
+D:\Users\namht1\source\repos\Crawler\obj\Release\netcoreapp3.1\Crawler.dll
+D:\Users\namht1\source\repos\Crawler\obj\Release\netcoreapp3.1\Crawler.pdb
