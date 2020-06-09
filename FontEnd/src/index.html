@@ -1,13 +1,111 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>FontEnd</title>
   <base href="/">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" type="image/x-icon" sizes="16x16" href="./assets/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>THIẾT BỊ CÔNG NGHIỆP</title>
 </head>
-<body>
-  <app-root></app-root>
+<body class="fix-header fix-sidebar card-no-border">
+  <app-root>
+    <style>
+      body,
+      html {
+        height: 100%;
+      }
+
+      .app-loading {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        z-index: 1072;
+        background: #ecf3f7;
+      }
+
+      .app-loading .spinner {
+        height: 90px;
+        width: 90px;
+        animation: rotate 2s linear infinite;
+        transform-origin: center center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+
+      .app-loading .spinner .path {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+        animation: dash 1.5s ease-in-out infinite;
+        stroke-linecap: round;
+        stroke: #26c6da;
+      }
+
+      @keyframes rotate {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes dash {
+        0% {
+          stroke-dasharray: 1, 200;
+          stroke-dashoffset: 0;
+        }
+
+        50% {
+          stroke-dasharray: 89, 200;
+          stroke-dashoffset: -35px;
+        }
+
+        100% {
+          stroke-dasharray: 89, 200;
+          stroke-dashoffset: -124px;
+        }
+      }
+
+      .fade {
+        transition: opacity .15s linear;
+      }
+
+      .modal-backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1040;
+        width: 100vw;
+        height: 100vh;
+        /* background-color: white; */
+      }
+
+      .modal-backdrop.show {
+        opacity: .5;
+      }
+
+      .modal-backdrop {
+        z-index: 1071;
+      }
+    </style>
+    <!-- loading layout replaced by app after startupp -->
+    <div class="app-loading">
+      <div class="logo" style="width: 100px; height: 100px; background: url(./assets/images/favicon.ico) center center no-repeat;">
+      </div>
+      <svg class="spinner" viewBox="25 25 50 50">
+        <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="1" stroke-miterlimit="10" />
+      </svg>
+    </div>
+    <div class="modal-backdrop fade show"></div>
+  </app-root>
 </body>
 </html>
